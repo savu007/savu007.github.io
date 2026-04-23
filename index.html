@@ -9,12 +9,12 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
+            background-color: #ffffff;
+            color: #000000;
         }
         header {
-            background-color: #0078d4;
-            color: white;
+            background-color: #000000;
+            color: #ffffff;
             padding: 20px;
             text-align: center;
         }
@@ -24,35 +24,25 @@
             padding: 20px;
         }
         .hero {
-            background-color: white;
+            background-color: #ffffff;
             padding: 40px;
             margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .tiles {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+        .list {
+            list-style: none;
+            padding: 0;
             margin-top: 20px;
         }
-        .tile {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
+        .list li {
+            margin-bottom: 20px;
         }
-        .tile:hover {
-            transform: translateY(-5px);
-        }
-        .tile h3 {
+        .list h3 {
             margin-top: 0;
-            color: #0078d4;
+            color: #000000;
         }
         footer {
-            background-color: #333;
-            color: white;
+            background-color: #000000;
+            color: #ffffff;
             text-align: center;
             padding: 10px;
             margin-top: 20px;
@@ -69,28 +59,28 @@
             <h2>About Me</h2>
             <p>Hello! I'm Savu007, a passionate developer and creator. Welcome to my personal website where I share my projects and thoughts.</p>
         </section>
-        <section class="tiles">
-            <div class="tile">
+        <ul class="list">
+            <li>
                 <h3>Projects</h3>
                 <p>Check out my latest projects and contributions.</p>
                 <a href="#projects">Learn More</a>
-            </div>
-            <div class="tile">
+            </li>
+            <li>
                 <h3>Blog</h3>
                 <p>Read my thoughts on technology and development.</p>
                 <a href="#blog">Read Posts</a>
-            </div>
-            <div class="tile">
+            </li>
+            <li>
                 <h3>Contact</h3>
                 <p>Get in touch with me for collaborations or questions.</p>
                 <a href="#contact">Contact Me</a>
-            </div>
-            <div class="tile">
+            </li>
+            <li>
                 <h3>Resume</h3>
                 <p>View my professional experience and skills.</p>
                 <a href="#resume">Download CV</a>
-            </div>
-        </section>
+            </li>
+        </ul>
     </div>
     <footer>
         <p>&copy; 2026 Savu007. All rights reserved.</p>
