@@ -1,15 +1,19 @@
 body {
-    font-family: 'Georgia', 'Times New Roman', serif;
+    font-family: 'EB Garamond', serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #333333;
+    color: #ffffff;
     line-height: 1.6;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', sans-serif;
+}
+
 header {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #333333;
+    color: #ffffff;
     padding: 40px 20px;
     text-align: center;
 }
@@ -23,6 +27,18 @@ header h1 {
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px 20px;
+}
+
+.nav-bar {
+    border-bottom: 1px solid #666666;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.current {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .main {
@@ -52,13 +68,13 @@ header h1 {
 
 .links a {
     font-size: 1.1em;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
 
 .highlight {
-    color: #0078d4;
+    color: #4da6ff;
 }
 
 .bio p {
@@ -68,11 +84,11 @@ header h1 {
 }
 
 footer {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #333333;
+    color: #ffffff;
     text-align: center;
     padding: 40px 20px;
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #666666;
 }
 
 @media (max-width: 768px) {
