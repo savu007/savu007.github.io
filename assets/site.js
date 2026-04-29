@@ -1,10 +1,10 @@
 const siteShell = {
     title: 'Shreyas Avula',
     nav: [
-        { href: 'index.html', label: 'about me', key: 'home' },
-        { href: 'projects.html', label: 'things i\'m doing', key: 'projects' },
-        { href: 'blog.html', label: 'things i\'m into', key: 'blog' },
-        { href: 'contact.html', label: 'find me here', key: 'contact' }
+        { href: 'index.html', label: 'About', key: 'home' },
+        { href: 'projects.html', label: 'Projects', key: 'projects' },
+        { href: 'blog.html', label: 'Miscellany', key: 'blog' },
+        { href: 'contact.html', label: 'Contact', key: 'contact' }
     ],
     footer: '&copy; 2026 Shreyas Avula. All rights reserved.'
 };
@@ -50,4 +50,16 @@ function renderShell() {
     footerContainer.appendChild(createFooter());
 }
 
-document.addEventListener('DOMContentLoaded', renderShell);
+function renderEmailLinks() {
+    document.querySelectorAll('[data-email-link]').forEach(link => {
+        const parts = ['shreyas', 'avula', String.fromCharCode(64), 'hot', 'mail', String.fromCharCode(46), 'com'];
+        const email = parts.join('');
+        link.href = `mailto:${email}`;
+        link.textContent = email.replace(String.fromCharCode(64), ' [at] ').replace(String.fromCharCode(46), ' [dot] ');
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderShell();
+    renderEmailLinks();
+});

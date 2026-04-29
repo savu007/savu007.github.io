@@ -3,47 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Shreyas Avula</title>
+    <title>Miscellany - Shreyas Avula</title>
+    <link rel="icon" type="image/x-icon" href="images/placeholder.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body data-page="blog">
     <div id="site-header"></div>
     <div class="container">
-        <div class="page-content">
-            <p style="color: #a0a0a0; font-style: italic; margin-bottom: 40px;">interests & explorations</p>
-            
-            <div class="subsections-grid">
-                <div class="subsection">
-                    <h3 class="section-title">computer science</h3>
-                    <p>wip.</p>
-                </div>
-                
-                <div class="subsection">
-                    <h3 class="section-title">physics</h3>
-                    <p>wip</p>
-                </div>
-                
-                <div class="subsection">
-                    <h3 class="section-title">mathematics</h3>
-                    <p>wip</p>
-                </div>
-                
-                <div class="subsection">
-                    <h3 class="section-title">literature</h3>
-                    <p>wip</p>
-                </div>
-                
-                <div class="subsection">
-                    <h3 class="section-title">philosophy</h3>
-                    <p>wip</p>
-                </div>
-                
-                <div class="subsection">
-                    <h3 class="section-title">miscellaneous</h3>
-                    <p>wip</p>
-                </div>
-            </div>
-        </div>
+        <main class="page-content miscellany-page">
+            <p class="eyebrow">Miscellany</p>
+            <h2 class="page-title">Notes, Photographs, and Other Things</h2>
+            <p class="page-intro">Reading notes, photography, and non-technical interests.</p>
+
+            <section class="miscellany-list" aria-label="Miscellany entries">
+                <article class="miscellany-preview photo-feature">
+                    <a class="photo-feature-link" href="cornell-photos.html" aria-label="View Cornell photos">
+                        <span class="entry-kicker">Photography</span>
+                        <span class="entry-title">Cornell Photos</span>
+                        <span class="entry-meta">Ithaca, NY</span>
+                        <span class="photo-lead-grid" aria-hidden="true">
+                            <img src="images/cornell/IMG_5272.jpg" alt="">
+                            <img src="images/cornell/IMG_5214.JPG" alt="">
+                            <img src="images/cornell/IMG_6336.JPG" alt="">
+                        </span>
+                    </a>
+                </article>
+
+                <article class="miscellany-preview">
+                    <p class="entry-kicker">Date / Reading</p>
+                    <h3 class="entry-title">Title of Reading Note</h3>
+                    <p class="entry-meta">Author or source - field / subject</p>
+                    <p>Brief summary or question to return to.</p>
+                </article>
+            </section>
+        </main>
     </div>
     <div id="site-footer"></div>
     <script src="assets/site.js"></script>
