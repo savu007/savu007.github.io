@@ -19,6 +19,7 @@ function createHeader() {
     
     const nav = document.createElement('nav');
     nav.className = 'nav-bar';
+    nav.setAttribute('aria-label', 'Main navigation');
     const page = document.body.dataset.page || 'home';
     
     siteShell.nav.forEach(item => {
@@ -27,6 +28,7 @@ function createHeader() {
         link.textContent = item.label;
         if (item.key === page) {
             link.className = 'current';
+            link.setAttribute('aria-current', 'page');
         }
         nav.appendChild(link);
     });
@@ -52,7 +54,7 @@ function renderShell() {
 
 function renderEmailLinks() {
     document.querySelectorAll('[data-email-link]').forEach(link => {
-        const parts = ['shreyas', 'avula', String.fromCharCode(64), 'hot', 'mail', String.fromCharCode(46), 'com'];
+        const parts = ['sna58', String.fromCharCode(64), 'cornell', String.fromCharCode(46), 'edu'];
         const email = parts.join('');
         link.href = `mailto:${email}`;
         link.textContent = email.replace(String.fromCharCode(64), ' [at] ').replace(String.fromCharCode(46), ' [dot] ');

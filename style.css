@@ -324,6 +324,29 @@ p.tagline {
     margin: 0;
 }
 
+.bio p + p {
+    margin-top: 1.2em;
+}
+
+.project-entry {
+    border-top: 1px solid #2a2a2a;
+    padding: 28px 0;
+}
+
+.project-entry p:last-child {
+    margin-bottom: 0;
+}
+
+.project-entry .project-tools {
+    color: #aabca0;
+    font-size: 1rem;
+}
+
+a:focus-visible {
+    outline: 2px solid #9dbb8f;
+    outline-offset: 5px;
+}
+
 footer {
     color: #999999;
     text-align: center;
