@@ -2,6 +2,7 @@ const siteShell = {
     title: 'Shreyas Avula',
     nav: [
         { href: 'index.html', label: 'About', key: 'home' },
+        { href: 'experience.html', label: 'Experience', key: 'experience' },
         { href: 'projects.html', label: 'Projects', key: 'projects' },
         { href: 'blog.html', label: 'Miscellany', key: 'blog' },
         { href: 'contact.html', label: 'Contact', key: 'contact' }
